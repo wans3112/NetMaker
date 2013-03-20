@@ -1,0 +1,3 @@
+[submodule "sinalibs"]
+	path = sinalibs
+	url = https://github.com/wans3112/sinalibs.git
