@@ -20,7 +20,18 @@
 		A8490DCD16F99B5E008E2A43 /* NetMakerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8490DCB16F99B5E008E2A43 /* NetMakerViewController.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A81D778816F99F4D00F16D84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A81D778116F99F4C00F16D84 /* SinaWeiBoSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E6ABCC1914988423008E0A37;
+			remoteInfo = SinaWeiBoSDK;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A81D778116F99F4C00F16D84 /* SinaWeiBoSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SinaWeiBoSDK.xcodeproj; path = sinalibs/SinaWeiBoSDK/SinaWeiBoSDK.xcodeproj; sourceTree = "<group>"; };
 		A8490DAC16F99B5E008E2A43 /* NetMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8490DB016F99B5E008E2A43 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A8490DB216F99B5E008E2A43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -53,9 +64,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A81D778216F99F4C00F16D84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A81D778916F99F4D00F16D84 /* libSinaWeiBoSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A8490DA116F99B5E008E2A43 = {
 			isa = PBXGroup;
 			children = (
+				A81D778116F99F4C00F16D84 /* SinaWeiBoSDK.xcodeproj */,
 				A8490DB616F99B5E008E2A43 /* NetMaker */,
 				A8490DAF16F99B5E008E2A43 /* Frameworks */,
 				A8490DAD16F99B5E008E2A43 /* Products */,
@@ -147,12 +167,28 @@
 			mainGroup = A8490DA116F99B5E008E2A43;
 			productRefGroup = A8490DAD16F99B5E008E2A43 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A81D778216F99F4C00F16D84 /* Products */;
+					ProjectRef = A81D778116F99F4C00F16D84 /* SinaWeiBoSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A8490DAB16F99B5E008E2A43 /* NetMaker */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A81D778916F99F4D00F16D84 /* libSinaWeiBoSDK.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSinaWeiBoSDK.a;
+			remoteRef = A81D778816F99F4D00F16D84 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A8490DAA16F99B5E008E2A43 /* Resources */ = {
@@ -292,6 +328,7 @@
 				A8490DD216F99B5E008E2A43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
